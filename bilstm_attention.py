@@ -1,5 +1,5 @@
-import chainer
 # coding: utf-8
+import chainer
 from chainer import cuda, Function, gradient_check, report, training, utils, Variable
 from chainer import datasets, iterators, optimizers, serializers
 from chainer import Link, Chain, ChainList
