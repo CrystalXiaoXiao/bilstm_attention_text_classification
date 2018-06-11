@@ -130,7 +130,7 @@ def main():
         x = [xp.array(doc, dtype=xp.int32) for doc in test_x]
         t = xp.array(test_y, dtype=xp.int32)
             
-        with chainer.using_config('train', False):
+        with chainer.using_config('train', False), chainer.using_config('enable_backprop', False): 
             y, _ = model(x, N_test)
         loss_test = F.softmax_cross_entropy(y, t)
         y = [np.argmax(item) for item in to_cpu(y.data)]
