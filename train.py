@@ -54,7 +54,7 @@ def main():
     parser.add_argument("--batchsize", default=64, type=int)
     parser.add_argument("--doc_len", default=350, type=int)
     parser.add_argument("--epoch", default=100, type=int)
-    parser.add_argument("--embedding", type=str)
+    parser.add_argument("--embedding", default='w2v.midasi.256.100K.bin',type=str)
     parser.add_argument("--train", default="train.csv" type=str)
     parser.add_argument("--test", default="test.csv" , type=str)
     parser.add_argument("--nunits", default=128, type=int)
