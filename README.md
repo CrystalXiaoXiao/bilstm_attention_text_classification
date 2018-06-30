@@ -1,0 +1,2 @@
+# bilstm_attention_text_classification
+BiLSTMとattentionによる文書分類モデル
